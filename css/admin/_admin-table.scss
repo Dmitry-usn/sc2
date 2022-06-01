@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    table-layout: fixed;
+    font-family: Arial;
+}
+  
+th, td {
+    vertical-align: middle;
+    padding: 16px;
+    font-size: 14px;
+    text-align: left;
+}
+
+th {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+  

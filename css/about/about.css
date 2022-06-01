@@ -1,0 +1,131 @@
+.about-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-card {
+  margin: 20px;
+  width: 350px;
+}
+
+.about-card__image-wrap {
+  border: solid 0.5px black;
+  width: 350px;
+  height: 500px;
+}
+
+.about-card__image-wrap .about-card__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.about-card__name {
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: end;
+  margin: 10px 0;
+}
+
+.about-card__text {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-card {
+    margin: 20px;
+    width: 250px;
+  }
+  .about-card__image-wrap {
+    width: 250px;
+    height: 300px;
+  }
+  .about-card__name {
+    line-height: 30px;
+    font-size: 18px;
+  }
+}
+
+.reclama__text {
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.about-photo {
+  position: relative;
+}
+
+.about-photo__wrap .about-photo__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.about-photo__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(36, 4, 4, 0.5);
+  font-size: 60px;
+  text-align: center;
+  line-height: 80px;
+  color: azure;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .about-photo__wrap .about-photo__image {
+    height: 43%;
+    width: 100%;
+  }
+  .about-photo__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.price {
+  border-top: 0.5px solid black;
+  margin: 40px 0;
+}
+
+.price__header {
+  text-align: center;
+  font-size: 40px;
+  line-height: 80px;
+}
+
+.price__text {
+  text-align: center;
+  font-family: "Rubik-Medium";
+  line-height: 20px;
+  margin: 20px;
+}
+
+.price__list {
+  list-style-type: circle;
+  padding: 20px;
+}
+
+.price__list .price__item {
+  line-height: 20px;
+  color: var(--text-main-color);
+}
+/*# sourceMappingURL=about.css.map */

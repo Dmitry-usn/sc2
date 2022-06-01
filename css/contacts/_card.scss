@@ -1,0 +1,52 @@
+//.managers {}
+
+.manager-card {
+    display: flex;
+    margin: 20px 0;
+    
+
+    .manager-card__image-wrap {
+        flex: 0 1 auto;
+
+        .manager-card__image {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .manager-card__text-wrap {
+        flex: 0 1 auto;
+        margin: 0 20px;
+
+        .manager-card__name {
+            font-weight: 600;
+            font-size: 24px;
+        }
+        
+        .manager-card__tel {
+        
+            .manager-card__tel-link {
+                font-size: 18px;
+                line-height: 40px;
+                color: var(--text-main-color);
+            }
+        }
+
+        .manager-card__info { }
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .manager-card {
+        flex-direction: column;
+
+        .manager-card__text-wrap {
+            margin: 0;
+        }
+    }
+}
+
+

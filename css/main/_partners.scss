@@ -1,0 +1,50 @@
+.partners {
+    margin: 0 -2.1%;
+    background-color: #4979b9;//var(--main-color3);
+    
+
+    .partners-header {
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 70px;
+        font-size: 45px;
+        font-family: "AlumniSans", sans-serif;
+        color: aliceblue;
+    }
+
+    .partners-cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .partner__link {
+        display: inline-block;
+    }
+
+    .partner__img {
+        height: 150px;
+        width: 200px;
+        margin: 20px 20px 70px;
+        
+        border: 3px solid #060001;; 
+        box-shadow: 0 0 7px #040000; 
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .partners { 
+        .partner__img {
+            height: 100px;
+            width: 140px;
+            margin: 10px 10px 25px;
+        }
+
+        .partners-header {
+            line-height: 40px;
+            font-size: 25px;
+        }
+    }
+}

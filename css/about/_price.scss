@@ -1,0 +1,28 @@
+.price {
+    border-top: 0.5px solid black;
+    margin: 40px 0;
+}
+
+.price__header {
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+.price__text {
+    text-align: center;
+    font-family: "Rubik-Medium";
+    line-height: 20px;
+    margin: 20px;
+}
+
+.price__list {
+    list-style-type: circle;
+    padding: 20px;
+    .price__item {
+        line-height: 20px;
+        color: var(--text-main-color);
+    }
+
+}
+

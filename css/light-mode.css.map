@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,YAAY,CAAA,QAAC;EACb,aAAa,CAAA,KAAC;EACd,aAAa,CAAA,QAAC;EACd,aAAa,CAAA,QAAC;EACd,cAAc,CAAA,QAAC;EAEf,iBAAiB,CAAA,MAAC;CACrB",
+    "sources": [
+        "light-mode.scss"
+    ],
+    "names": [],
+    "file": "light-mode.css"
+}

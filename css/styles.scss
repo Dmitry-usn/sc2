@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Rubik-Medium'; 
+    src: url(../fonts/Rubik-Medium.ttf); 
+}
+
+@font-face {
+    font-family: 'Rubik-Regular'; 
+    src: url(../fonts/Rubik-Regular.ttf); 
+}
+
+@font-face {
+    font-family: 'AlumniSans'; 
+    src: url(../fonts/AlumniSans.ttf); 
+}
+
+:root {
+    --main-color: #f5f5e9;
+    --main-color1: #fff;
+    --main-color2: #64DFDF;
+    --main-color3: #5e696a;
+    --color-footer: #48BFE3;
+
+    --text-main-color: black;
+
+
+    --secondary-color: #444668;
+    --secondary-color1: #5390D9;
+    --secondary-color2: #5E60CE;
+    --secondary-color3: #41394e;
+    --secondary-footer: #2b2130;
+
+    --text-secondary-color: white;
+}
+ 
+html {
+    font-family: 'AlumniSans', sans-serif;
+}
+
+body {
+    transition: 0.5s;
+    background-color: var(--main-color);
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--text-main-color);
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--text-main-color);
+}
+
+h3 {
+    font-size: 24px;
+    color: var(--text-main-color);
+}
+
+h4 {
+    font-weight: bold;
+    color: var(--text-main-color);
+}
+
+p {
+    font-size: 16px;
+    line-height: normal;
+    color: var(--text-main-color);
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; 
+    color: white;
+    margin-bottom: 15px;
+}
+
+.alert.success { background-color: #04AA6D;}
+
+.image-404__wrap { background-color: #ffffff; }
+
+.image-404 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media screen and (max-width: 600px) {
+    h1 { font-size: 30px; line-height: 26px; }
+    h2 { font-size: 20px; line-height: 24px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    p  { font-size: 14px; line-height: normal; }
+}
+
+@import 'top-menu';
+@import 'header';
+@import './admin/admin';
+@import './registration/registration';
+@import './main/main';
+@import './reviews/reviews';
+@import './about/about';
+@import './contacts/contacts';
+@import './blog/blog';
+@import './articles_page/articles_page';
+@import './tours/tours';
+@import 'footer';

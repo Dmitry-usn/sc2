@@ -1,0 +1,208 @@
+.excursion-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Rubik-Regular', sans-serif;
+  margin: 0 2%;
+}
+
+.excursion-wrap .excursion-main {
+  width: 66%;
+}
+
+.excursion-wrap .excursion-aside {
+  width: 33%;
+  margin-left: 20px;
+}
+
+.excursion-wrap .excursion-aside .org-sticky {
+  top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: gainsboro;
+  border-radius: 4px;
+  padding: 4px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 600px) {
+  .excursion-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .excursion-wrap .excursion-main {
+    width: 100%;
+  }
+  .excursion-wrap .excursion-aside {
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .excursion-wrap .excursion-aside .org-sticky {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.excursion__hr {
+  border: solid #04aa6d;
+  margin: 25px 10px;
+}
+
+.article-main {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/**/
+.article-heading__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-slider__wrap {
+  padding: 10px;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* map */
+.article-ymap__container {
+  margin: 0 auto;
+}
+
+.ymap {
+  background-color: #333;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* end_map */
+/**/
+.article-container {
+  padding: 0.01em 16px;
+}
+
+.article-header {
+  line-height: 1.5;
+  margin: 10px 0;
+  color: black;
+}
+
+.article-text {
+  text-align: justify;
+  color: black;
+}
+
+.article-list {
+  list-style-type: disc;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* organizer */
+.organizer-header {
+  line-height: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
+
+.organizer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.organizer-image_wrap {
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+}
+
+.organizer-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.organizer-text {
+  font-weight: bold;
+  color: #000;
+}
+
+.organizer-element {
+  list-style-type: disc;
+  line-height: 1.5em;
+  font-style: italic;
+  margin: 0 20px;
+}
+
+/* end_organizer */
+.article-btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.article-btn:hover {
+  background-color: #45a049;
+}
+
+.article-form__input[type=text], .article-form__input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .article-heading__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article-slider__wrap {
+    width: 98%;
+    height: 98%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .article-map__wrap {
+    margin: 0;
+  }
+  .article-main {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+/*# sourceMappingURL=articles_page.css.map */

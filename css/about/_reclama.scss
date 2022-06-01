@@ -1,0 +1,54 @@
+.reclama {
+
+    
+}
+
+.reclama__text {
+    text-align: justify;
+    margin: 20px 0;
+}
+
+
+.about-photo {
+    position: relative;
+}
+
+.about-photo__wrap {
+
+    //height: 600px;
+
+    
+    .about-photo__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+}
+
+.about-photo__text {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(36, 4, 4, 0.5);
+    font-size: 60px;
+    text-align: center;
+    line-height: 80px;
+    color: azure;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .about-photo__wrap {
+        .about-photo__image {
+            height: 43%;
+            width: 100%;
+        }
+    }
+
+    .about-photo__text { 
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
