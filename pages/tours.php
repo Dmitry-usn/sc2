@@ -11,7 +11,7 @@
     $numOfPersons = array("0" => "количество участников", "4" => "от 4", "6" => "от 6", "8" => "больше 8");
     $priceExcursion = array("10000" => "цена, руб.", "1000" => "до 1000", "3000"=>"до 3000", "5000"=>"до 5000");
     $excursionDuration = array("10000" => "продолжительность, часы", "4"=>"до 4","6"=>"до 6","8"=>"до 8");
-
+    
 ?>
 
 
@@ -72,9 +72,9 @@
         <aside class="tours-cards-aside">
             <table class="tours-table">
                 <tr class="tours-table-tr">
-                    <th class="tours-table-th">Тематика:</th>
+                    <th class="tours-table-th" >Тематика:</th>
                 </tr>
-                <tr class="tours-table-tr"><td class="tours-table-td">Все</td></tr>
+                <tr class="tours-table-tr"><td class="tours-table-td">Все </td></tr> 
                 <tr class="tours-table-tr"><td class="tours-table-td">Природа</td></tr>
                 <tr class="tours-table-tr"><td class="tours-table-td">Город</td></tr>
                 <tr class="tours-table-tr"><td class="tours-table-td">Исторические</td></tr>
@@ -132,9 +132,12 @@
 
     <script>
 
-        var tableElem = document.querySelectorAll('td');
+        let tableElem = document.querySelectorAll('td.tours-table-td');
         console.log(tableElem);
-        tableElem.onclick = function() { }
+        for (let i = 0; i < tableElem.length; i++ ) {
+            tableElem[i].onclick = function() { console.log('hello') }
+        }
+        
     </script>
 </main>
 

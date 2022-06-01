@@ -51,7 +51,7 @@ a.btn:active {
 .tours-cards {
     transition:.5s;
 
-    margin: 30px auto;
+    margin: 30px 0;
     max-width: 960px;
     text-align: center;
     display: flex;
@@ -227,7 +227,7 @@ a.btn:active {
 
 .tours-cards-container {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     align-items: flex-start;
 }
 
