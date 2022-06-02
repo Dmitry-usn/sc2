@@ -57,6 +57,9 @@
             <?php } ?>
 
             <a class="top-menu__link noactive" href="/">Главная</a>
+            <a class="top-menu__link noactive" href="/restaurant">Где поесть</a>
+            <a class="top-menu__link noactive" href="/places">Что посмотреть</a>
+            <a class="top-menu__link noactive" href="/reserve">Где остановиться</a>
             <a class="top-menu__link noactive" href="/tours">Экскурсии</a>
             <a class="top-menu__link noactive" href="/reviews">Отзывы</a>
             <a class="top-menu__link noactive" href="/about">О нас</a>
@@ -76,11 +79,22 @@
             <nav class="main-navigation">
 
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/');?>" href="/">главная</a></div>
+                <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/restaurant');?>" href="/restaurant">Где поесть</a></div>
+                <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/places');?>" href="/places">Что посмотреть</a></div>
+                <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/reserve');?>" href="/reserve">Где остановиться</a></div>
+                
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/tours');?>" href="/tours">экскурсии</a></div>
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/reviews');?>" href="/reviews">отзывы</a></div>
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/about');?>" href="/about">о нас</a></div>
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/contacts');?>" href="/contacts">контакты</a></div>
             </nav>
+            <div>
+                <nav class="main-navigation">
+                    <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/restaurant');?>" href="/restaurant">Где поесть</a></div>
+                    <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/places');?>" href="/places">Что посмотреть</a></div>
+                    <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/reserve');?>" href="/reserve">Где остановиться</a></div>
+
+                </nav></div>
             <!-- Navigation_end -->
             <button id="switchMode" class="btn-moon"></button>
             
