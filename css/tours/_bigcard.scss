@@ -278,9 +278,11 @@ a.btn:active {
 @media screen and (max-width: 600px) {
     .tours-cards-container {
         flex-direction: column;
+        align-items: center;
     }
     .tours-cards-aside {
         margin: 2px 0;
+        max-width: 100%;
     }
 
     .tours-cards {

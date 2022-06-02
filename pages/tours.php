@@ -8,7 +8,7 @@
     $_SESSION['price'] = $_POST['price'];
     $_SESSION['duration'] = $_POST['duration'];
     $_SESSION['ex_type'] = $_POST['ex_type'];
-     var_dump($_SESSION);
+     // var_dump($_SESSION);
     $numOfPersons = array("0" => "количество участников", "4" => "от 4", "6" => "от 6", "8" => "больше 8");
     $priceExcursion = array("10000" => "цена, руб.", "1000" => "до 1000", "3000"=>"до 3000", "5000"=>"до 5000");
     $excursionDuration = array("10000" => "продолжительность, часы", "4"=>"до 4","6"=>"до 6","8"=>"до 8");

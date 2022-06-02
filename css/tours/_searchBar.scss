@@ -96,4 +96,9 @@
     .tour__search-bar .tour__search-container {
         flex-direction: column;
     }
+
+    .tour__search-form {
+        flex-direction: column;
+        align-items: normal;
+    }
 }
