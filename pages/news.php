@@ -11,7 +11,7 @@
     <div class="news">
         
             <h1 class="news-header"><?=$result['h1']; ?></h1>
-            <img class="news-image" src="<?=$result['file']; ?>" alt="" />
+            <!-- <img class="news-image" src="<?=$result['file']; ?>" alt="" /> -->
             <p class="news-text"><?=$result['text']; ?></p>
         
     </div>
