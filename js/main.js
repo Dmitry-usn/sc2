@@ -3,7 +3,6 @@ $(document).ready(function() {
     $(".tour-card").click(function(e) {
         e.preventDefault();
         var isShowing = false;
-        console.log('tc');
         if ($(this).hasClass("show")) {
             isShowing = true
         }
@@ -113,6 +112,26 @@ window.onclick = function(event) {
 
 */
 
+
+
+/*
+let tourHistory = document.getElementById("tourHistorical");
+tourHistory.onclick = function() {
+    let tourCards = document.querySelectorAll('div.tour-card:not(historical)');
+    for (let i = 0; i < tourCards.length; i++) {
+        tourCards[i].style.display == 'none' ? tourCards[i].style.display = '' : tourCards[i].style.display = 'none';
+    }
+}
+
+function TourFilterCards(elemId, excClass) {
+    let elem = document.getElementById(elemId);
+    elem.onclick = function() {
+        let tourCards = document.querySelectorAll(`div.tour-card:not(${excClass})`);
+        tourCards[i].style.display == 'none' ? tourCards[i].style.display = '' : tourCards[i].style.display = 'none';
+    }
+}
+
+*/
 
 let slideIndex = 1;
 showSlides(slideIndex);
