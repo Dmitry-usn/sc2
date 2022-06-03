@@ -1,17 +1,17 @@
 .info {
     text-align: center;
     padding: 0 2%;
-    
-    //background: url(../../img/bg.jpg) no-repeat center;
-    //background-size: 100%;
 
     .info__header {
         font-family: 'Rubik-Medium', sans-serif;
-        //margin: 2%;
     }
 
     .info__text {
-        //margin: 2% 0;
         text-align: justify;
+    }
+
+    hr {
+        margin: 25px;
+        border-color: #87af84;
     }
 }

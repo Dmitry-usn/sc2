@@ -2,13 +2,93 @@
 
 <main class="cite-main">
     <div class="info">
-        <hr/>
-        <h2 class="info__header">Рестораны Красноярска
-        </h2>
-        <hr/>
-        <p class="info__text">
-        </p>
+        <hr />
+        <h2 class="info__header">Где поесть</h2>
+        <hr />
+        <p class="info__text"></p>
     </div>
+
+    <div class="places-ymap" id="places-ymap"></div>
+
+    <script>
+
+        function init() { 
+            var myMap = new ymaps.Map('places-ymap', {
+                center: [56.02298527095825,92.863263479955],
+                zoom: 17,
+                controls: [ ]
+                }, { autoFitToViewport: 'always' })
+
+                var listBoxItems = ['Рестораны', 'Бары', 'Столовые']
+                .map(function (title) {
+                    return new ymaps.control.ListBoxItem({
+                        data: {
+                            content: title
+                        },
+                        state: {
+                            selected: true
+                        }
+                    })
+                }),
+            reducer = function (filters, filter) {
+                filters[filter.data.get('content')] = filter.isSelected();
+                return filters;
+            },
+            // Теперь создадим список, содержащий 5 пунктов.
+            listBoxControl = new ymaps.control.ListBox({
+                data: {
+                    content: 'Фильтр',
+                    title: 'Фильтр'
+                },
+                items: listBoxItems,
+                state: {
+                    // Признак, развернут ли список.
+                    expanded: true,
+                    filters: listBoxItems.reduce(reducer, {})
+                }
+            });
+        myMap.controls.add(listBoxControl);
+
+        // Добавим отслеживание изменения признака, выбран ли пункт списка.
+        listBoxControl.events.add(['select', 'deselect'], function (e) {
+            var listBoxItem = e.get('target');
+            var filters = ymaps.util.extend({}, listBoxControl.state.get('filters'));
+            filters[listBoxItem.data.get('content')] = listBoxItem.isSelected();
+            listBoxControl.state.set('filters', filters);
+        });
+
+        var filterMonitor = new ymaps.Monitor(listBoxControl.state);
+        filterMonitor.add('filters', function (filters) {
+            // Применим фильтр.
+            objectManager.setFilter(getFilterFunction(filters));
+        });
+
+        function getFilterFunction(categories) {
+            return function (obj) {
+                var content = obj.properties.balloonContent;
+                return categories[content]
+            }
+        }
+
+        }
+        ymaps.ready(init);
+    </script>
+
+    <form method='post' class="places-search__form">
+        <select name="" id="">
+            <option value="">val1</option>
+            <option value="">val2</option>
+            <option value="">val3</option>
+        </select>
+
+    </form>
+
+    <div class="places-card__container">
+        <div class="places-card"></div>
+    </div>
+
+
+
 
     <div class="articles">
         <div class="article-main">

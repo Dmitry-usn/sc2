@@ -202,6 +202,11 @@ body {
   text-align: justify;
 }
 
+.info hr {
+  margin: 25px;
+  border-color: #87af84;
+}
+
 .slider-wrap {
   padding: 0 20%;
 }
