@@ -78,23 +78,27 @@
             <!-- Navigation -->
             <nav class="main-navigation">
 
-                <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/');?>" href="/">главная</a></div>
-                <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/restaurant');?>" href="/restaurant">Где поесть</a></div>
-                <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/places');?>" href="/places">Что посмотреть</a></div>
-                <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/reserve');?>" href="/reserve">Где остановиться</a></div>
+                <div class="main-navigation__wrap">
+                    <div class="main-navigation__dropdown">
+                        <button class="dropbtn">
+                            <a class="main-navigation__link <?php active('/');?>" href="/">
+                                главная
+                            </a><img src="./ico/icon-caret-down.png" style="width:10px;height:10px"/>
+                        </button>
+                        <div class="main-navigation__dropdown-content">
+                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/restaurant');?>" href="/restaurant">Где поесть</a></div>
+                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/reserve');?>" href="/reserve">Где остановиться</a></div>
+                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/places');?>" href="/places">Что посмотреть</a></div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/tours');?>" href="/tours">экскурсии</a></div>
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/reviews');?>" href="/reviews">отзывы</a></div>
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/about');?>" href="/about">о нас</a></div>
                 <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/contacts');?>" href="/contacts">контакты</a></div>
             </nav>
-            <div>
-                <nav class="main-navigation">
-                    <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/restaurant');?>" href="/restaurant">Где поесть</a></div>
-                    <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/places');?>" href="/places">Что посмотреть</a></div>
-                    <div class="main-navigation__wrap"><a class="main-navigation__link <?php active('/reserve');?>" href="/reserve">Где остановиться</a></div>
 
-                </nav></div>
             <!-- Navigation_end -->
             <button id="switchMode" class="btn-moon"></button>
             

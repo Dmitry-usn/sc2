@@ -12,13 +12,11 @@
     -o-background-size: 100%; 
     background-size: 100%; 
 
-    /* media for small devices */
     @media screen and (max-device-width: 900px) {
         .main-navigation{
             display: none;
         }
 
-        height: 100px;
     }
 }
 
@@ -42,7 +40,6 @@
         left: 50%;
     }
 
-    /* media for small devices */
     @media screen and (max-device-width: 900px) { 
         width: 80px;
         height: 80px;
@@ -52,7 +49,6 @@
             border-radius: 50px;
         }
     }
-
 }
 
 .main-navigation {
@@ -78,12 +74,15 @@
             text-decoration: none; 
             color: #000;
             text-shadow: 1px 1px 1px #000;
-            /* media for small devices 
-            @media screen and (max-device-width: 900px) {
+        }
 
-                font-size: 10px;
-                height: 100px;
-            }*/
+        .main-navigation__link-dropdown {
+            cursor: pointer;
+            font-weight: 900;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #000;
+            
         }
 
         .main-navigation__link:visited {
@@ -97,26 +96,79 @@
     }
 }
 
+
+  /* Dropdown container - needed to position the dropdown content */
+.main-navigation__dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+/* Style the dropdown button to fit inside the topnav */
+.main-navigation__dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+/* Style the dropdown content (hidden by default) */
+.main-navigation__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4d75c7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Style the links inside the dropdown */
+.main-navigation__dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .main-navigation__dropdown:hover .dropbtn {
+    background-color: #4d75c7;
+    color: white;
+}
+  
+/* Add a grey background to dropdown links on hover */
+.main-navigation__dropdown-content a:hover {
+    background-color: #1aa575;
+    color: black;
+}
+  
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.main-navigation__dropdown:hover .main-navigation__dropdown-content {
+    display: block;
+}
+  
+
+
+
 // btn dark/light mode 
 
 #switchMode {
-
-    //background-color: DodgerBlue; /* Blue background */
-    
-
     background-size: cover;
-    border: none; /* Remove borders */
+    border: none; 
     border-radius: 20px;
-    color: white; /* White text */
-    padding: 20px 20px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
+    color: white; 
+    padding: 20px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
 }
 
-/* Darker background on mouse-over */
 #switchMode:hover {
     background-color: RoyalBlue;
-    
 }
 
 .btn-moon { background-image: url(../ico/moon.png);}
