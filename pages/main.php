@@ -121,39 +121,19 @@
 
 
     <div class="info">
-        <h2 class="info__header">Достопримечательности</h2>
+        <h2 class="info__header">Места</h2>
     </div>
 
 
     <div class="cards">
 
-
-        <a class="card__link" href="./museums">
+        <a class="card__link" href="./restaurant">
             <div class="main-card__wrap">
-                <div class="main-card" style="background: url('./img/main/card1.jpg') center center no-repeat;background-size: cover;">
+                <div class="main-card" style="background: url('./img/main/card7.jpg') center center no-repeat;background-size: cover;">
                     <div class="main-card-title-content">
-                        <h3 class="main-card-header">МУЗЕИ</h3>
+                        <h3 class="main-card-header">ГДЕ ПОЕСТЬ</h3>
                         <hr class="main-card-hr" />
-                        <div class="intro">Лучшие музеи Красноярска</div>
-                    </div><!-- /.title-content -->
-                    <div class="main-card-info">
-                        <p class="main-card-text">Посмотреть</p>
-                    </div><!-- /.card-info -->
-                        
-                    <!-- overlays -->
-                    <div class="gradient-overlay"></div>
-                    <div class="color-overlay"></div>
-                </div><!-- /.blog-card -->    
-            </div>
-        </a>
-
-        <a class="card__link" href="./reserve">
-            <div class="main-card__wrap">
-                <div class="main-card" style="background: url('./img/main/card2.jpg') center center no-repeat;background-size: cover;">
-                    <div class="main-card-title-content">
-                        <h3 class="main-card-header">ЗАПОВЕДНИКИ</h3>
-                        <hr class="main-card-hr" />
-                        <div class="intro">Заповедники Красноярска</div>
+                        <div class="intro">Рестораны, кафе, столовые</div>
                     </div><!-- /.title-content -->
                     <div class="main-card-info">
                         <p class="main-card-text">Посмотреть</p>
@@ -168,11 +148,11 @@
 
         <a class="card__link" href="./places">
             <div class="main-card__wrap">
-                <div class="main-card" style="background: url('./img/main/card3.jpg') center center no-repeat;background-size: cover;">
+                <div class="main-card" style="background: url('./img/main/card11.jpg') center center no-repeat;background-size: cover;">
                     <div class="main-card-title-content">
-                        <h3 class="main-card-header">МЕСТА</h3>
+                        <h3 class="main-card-header">ГДЕ ОСТАНОВИТЬСЯ</h3>
                         <hr class="main-card-hr" />
-                        <div class="intro">Интересные места Красноярска</div>
+                        <div class="intro">Гостиницы, хостел</div>
                     </div><!-- /.title-content -->
                     <div class="main-card-info">
                         <p class="main-card-text">Посмотреть</p>
@@ -186,13 +166,13 @@
             
         </a>
 
-        <a class="card__link" href="./restaurant">
+        <a class="card__link" href="./reserve">
             <div class="main-card__wrap">
-                <div class="main-card" style="background: url('./img/main/card7.jpg') center center no-repeat;background-size: cover;">
+                <div class="main-card" style="background: url('./img/main/card1.jpg') center center no-repeat;background-size: cover;">
                     <div class="main-card-title-content">
-                        <h3 class="main-card-header">РЕСТОРАНЫ</h3>
+                        <h3 class="main-card-header">ЧТО ПОСМОТРЕТЬ</h3>
                         <hr class="main-card-hr" />
-                        <div class="intro">Рестораны Красноярска</div>
+                        <div class="intro">Достопримечательности Красноярска</div>
                     </div><!-- /.title-content -->
                     <div class="main-card-info">
                         <p class="main-card-text">Посмотреть</p>
@@ -204,6 +184,10 @@
                 </div><!-- /.blog-card -->    
             </div>
         </a>
+
+
+
+
         
 
 

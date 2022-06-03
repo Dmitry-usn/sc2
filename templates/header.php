@@ -57,9 +57,9 @@
             <?php } ?>
 
             <a class="top-menu__link noactive" href="/">Главная</a>
-            <a class="top-menu__link noactive" href="/restaurant">Где поесть</a>
-            <a class="top-menu__link noactive" href="/places">Что посмотреть</a>
-            <a class="top-menu__link noactive" href="/reserve">Где остановиться</a>
+            <a class="top-menu__link noactive" href="/restaurant" style="color:#64a930">| - Где поесть</a>
+            <a class="top-menu__link noactive" href="/places" style="color:#64a930">| - Что посмотреть</a>
+            <a class="top-menu__link noactive" href="/reserve" style="color:#64a930">| - Где остановиться</a>
             <a class="top-menu__link noactive" href="/tours">Экскурсии</a>
             <a class="top-menu__link noactive" href="/reviews">Отзывы</a>
             <a class="top-menu__link noactive" href="/about">О нас</a>
@@ -87,8 +87,8 @@
                         </button>
                         <div class="main-navigation__dropdown-content">
                             <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/restaurant');?>" href="/restaurant">Где поесть</a></div>
-                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/reserve');?>" href="/reserve">Где остановиться</a></div>
-                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/places');?>" href="/places">Что посмотреть</a></div>
+                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/reserve');?>" href="/places">Где остановиться</a></div>
+                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/places');?>" href="/reserve">Что посмотреть</a></div>
                         </div>
                     </div>
                 </div>
