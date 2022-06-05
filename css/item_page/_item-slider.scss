@@ -1,0 +1,77 @@
+
+  
+  /* Position the image container (needed to position the left and right arrows) */
+.item__slider-container {
+    position: relative;
+    box-sizing: border-box;
+}
+  
+/* Hide the images by default */
+.item-slider__slide {
+    display: none;
+}
+  
+  /* Add a pointer when hovering over the thumbnail images */
+.item-cursor {
+    cursor: pointer;
+}
+  
+  /* Next & previous buttons */
+.item-prev,
+.item-next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.item-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.item-prev:hover,
+.item-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  
+  /* Container for image text */
+.item-caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.item-slider__row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.item-slider__column {
+    float: left;
+    width: 20%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.item-demo {
+    opacity: 0.6;
+}
+  
+.item-active,
+.item-demo:hover {
+    opacity: 1;
+}

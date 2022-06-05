@@ -1,0 +1,57 @@
+.places-cards__container {
+    box-sizing: border-box;
+}
+
+.places-cards__container > .place-card {
+    padding: 2px;
+}
+
+.place-card__link {
+    text-decoration: none;
+}
+
+.place-card {
+    border-radius: 4px;
+    transition: 0.3s;
+    width: 24%;
+    margin: 5px 3px;
+    float: left;
+    background-color: thistle;
+}
+  
+.place-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.places-cards__container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.place-card__text-container {
+    background-color: #fff;
+    padding: 2px 16px;
+}
+
+.place-card__header {
+    font-size: 24px;
+    color: black;
+    font-weight: 800;
+}
+
+.place-card__text {
+    font-size: 20px;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .places-cards__container {
+        //flex-direction: column;
+    }
+
+    .place-card {
+        width: 95%;
+    }
+}

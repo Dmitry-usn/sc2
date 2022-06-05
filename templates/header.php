@@ -87,8 +87,8 @@
                         </button>
                         <div class="main-navigation__dropdown-content">
                             <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/restaurant');?>" href="/restaurant">Где поесть</a></div>
-                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/reserve');?>" href="/places">Где остановиться</a></div>
-                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/places');?>" href="/reserve">Что посмотреть</a></div>
+                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/reserve');?>" href="/reserve">Где остановиться</a></div>
+                            <div class="main-navigation__wrap"><a class="main-navigation__link-dropdown <?php active('/places');?>" href="/places">Что посмотреть</a></div>
                         </div>
                     </div>
                 </div>

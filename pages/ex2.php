@@ -153,6 +153,7 @@
         </div>
     </aside>
     <script src="./js/maps.js"></script>
+    <script src="./js/mainSliderScript.js"></script>
     <script>
         window.onload = function() {
             // pedestrian = пешая маршрутизация

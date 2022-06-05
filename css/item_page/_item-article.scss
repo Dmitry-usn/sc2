@@ -1,0 +1,19 @@
+.item__article {
+    margin: 20px 0;
+}
+
+.item__text {
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .item__article-header {
+        font-size: 22px;
+    }
+
+    .item__text {
+        font-size: 18px;
+    }
+}

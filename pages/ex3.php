@@ -10,7 +10,7 @@
     <main class="excursion-main">
         <div class="articles">
             <div class="article-main">
-            <div class="article-heading__wrap">
+                <div class="article-heading__wrap">
                     <div class="article-slider__wrap">
                         <div class="main-slider-container">
 
@@ -155,6 +155,7 @@
         </div>
     </aside>
     <script src="./js/maps.js"></script>
+    <script src="./js/mainSliderScript.js"></script>
     <script>
         window.onload = function() {
             // pedestrian = пешая маршрутизация

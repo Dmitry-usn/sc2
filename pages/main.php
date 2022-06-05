@@ -222,7 +222,7 @@
     </div>
 
 </main>
-
+<script src="./js/mainSliderScript.js"></script>
 
 <!-- main_end -->
 

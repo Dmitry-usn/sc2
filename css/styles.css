@@ -453,22 +453,108 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.places-ymap {
-  width: 100%;
-  height: 300px;
-  margin: 10px 0;
-}
-
 .places-search__form {
-  background: #004187;
-}
-
-.places-card__container {
+  background: var(--color-footer);
+  height: 50px;
+  margin: 10px 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+}
+
+.places-search__form-button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  background-color: #2196F3;
+  border-radius: 4px;
+}
+
+.places-search__form-button:hover {
+  background: #0b7dda;
+}
+
+.places-search__form-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: vertical;
+}
+
+.places-cards__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.places-cards__container > .place-card {
+  padding: 2px;
+}
+
+.place-card__link {
+  text-decoration: none;
+}
+
+.place-card {
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 24%;
+  margin: 5px 3px;
+  float: left;
+  background-color: thistle;
+}
+
+.place-card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.places-cards__container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.place-card__text-container {
+  background-color: #fff;
+  padding: 2px 16px;
+}
+
+.place-card__header {
+  font-size: 24px;
+  color: black;
+  font-weight: 800;
+}
+
+.place-card__text {
+  font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .place-card {
+    width: 95%;
+  }
+}
+
+.places-ymap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  margin: 10px 0;
+  border: 1px solid green;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .form-container {
@@ -2169,6 +2255,156 @@ a.btn:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.item__slider-container {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Hide the images by default */
+.item-slider__slide {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.item-cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.item-prev,
+.item-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.item-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.item-prev:hover,
+.item-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.item-caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.item-slider__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.item-slider__column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.item-demo {
+  opacity: 0.6;
+}
+
+.item-active,
+.item-demo:hover {
+  opacity: 1;
+}
+
+.item__article {
+  margin: 20px 0;
+}
+
+.item__text {
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .item__article-header {
+    font-size: 22px;
+  }
+  .item__text {
+    font-size: 18px;
+  }
+}
+
+.item-main {
+  padding: 0 14%;
+}
+
+.item__heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.item__slider-wrap {
+  width: 66%;
+  max-width: 800px;
+}
+
+.item__map {
+  width: 33%;
+  height: 300px;
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .item-main {
+    padding: 0;
+  }
+  .item__slider-wrap {
+    width: 100%;
+  }
+  .item__heading-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item__map {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 2px;
+    width: 100%;
+    margin: 5px 0;
   }
 }
 

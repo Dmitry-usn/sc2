@@ -23,6 +23,7 @@ require './system/Routing.php';
     $r->addRoute("/astafev", "ex2.php");
     $r->addRoute("/stolbu", "ex3.php");
     $r->addRoute("/krasnoyarsk-night", "ex4.php");
+    $r->addRoute("/item_page", "item_page.php");
     
     while($post = mysqli_fetch_array($data)) { 
         $r->addRoute("/" . $post['id'], 'news.php');
