@@ -75,7 +75,7 @@
 
 
                     <!--<input type="text" placeholder="Поиск..." name="search" /> -->
-                    <button type="submit">Поиск</button>
+                    <button type="submit" class="toursBtnSearch">Поиск</button>
                 </form>
             </div>
         </div>
@@ -146,6 +146,7 @@
     </div>
 
     <script>
+        
 /*
         let tableElem = document.querySelectorAll('td.tours-table-td');
         console.log(tableElem);
