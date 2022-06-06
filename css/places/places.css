@@ -85,6 +85,15 @@
   color: black;
 }
 
+.filterDiv {
+  display: none;
+  /* Hidden by default */
+}
+
+.places__show {
+  display: block;
+}
+
 @media screen and (max-width: 600px) {
   .place-card {
     width: 95%;

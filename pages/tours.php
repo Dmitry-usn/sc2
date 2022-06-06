@@ -147,34 +147,6 @@
 
     <script>
         
-/*
-        let tableElem = document.querySelectorAll('td.tours-table-td');
-        console.log(tableElem);
-        for (let i = 0; i < tableElem.length; i++ ) {
-            tableElem[i].onclick = function() { 
-                let tourCards = document.querySelectorAll('div.tour-card:not(div.city)');
-                for (let i = 0; i < tourCards.length; i++) {
-                    tourCards[i].style.display == 'none' ? tourCards[i].style.display = '' : tourCards[i].style.display = 'none';
-                    //console.log(tourCards[i].style);
-                }
-            }
-        }
-
-
-        let tourHistory = document.getElementById("tourHistorical");
-        tourHistory.onclick = function() {
-            let tourCards = document.querySelectorAll('div.tour-card:not(historical)');
-            for (let i = 0; i < tourCards.length; i++) {
-                tourCards[i].style.display == 'none' ? tourCards[i].style.display = '' : tourCards[i].style.display = 'none';
-            }
-        }
-        
-        
-*/
-/*<tr class="tours-table-tr"><td class="tours-table-td" id="tourAll">Все </td></tr> 
-<tr class="tours-table-tr"><td class="tours-table-td" id="tourNature">Природа</td></tr>
-<tr class="tours-table-tr"><td class="tours-table-td" id="tourCity">Город</td></tr>
-<tr class="tours-table-tr"><td class="tours-table-td" id="tourHistorical">Исторические</td></tr>*/
 
         function TourFilterCards(elemId, excClass) {
             let elem = document.getElementById(elemId);

@@ -65,6 +65,7 @@ $data = mysqli_fetch_assoc(mysqli_query($db, $sql));
 
     <article class="item__article">
         <h2 class="item__article-header"><?= $data["header"]; ?></h2>
+        <hr  />
         <p class="item__text"><?= $data["text"]; ?></p>
     </article>
 
