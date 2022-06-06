@@ -11,8 +11,7 @@
                 <div class="socials">
                     <ul class="socials__list">
                         <li class="socials__list-el"><a href="" class="socials__link"><img alt="VK" src="./ico/vk.png"/></a></li>
-                        <li class="socials__list-el"><a href="" class="socials__link"><img alt="FC" src="./ico/facebook.png"/></a></li>
-                        <li class="socials__list-el"><a href="" class="socials__link"><img alt="instagram" src="./ico/instagram.png"/></a></li>
+                        
                         <li class="socials__list-el"><a href="" class="socials__link"><img alt="youtube" src="./ico/youtube.png"/></a></li>
                         <li class="socials__list-el"><a href="" class="socials__link"><img alt="email" src="./ico/email.png"/></a></li>
                     </ul>

@@ -61,41 +61,7 @@
 
     </div>
 
-    <div class="address">
-        <div class="magazine__wrap">
-            <div class="magazine">
-                <a href="#" class="magazine__href">
-                    <img src="./ico/appstore.png" alt="app store" class="appstore" />
-                </a>
-                <a href="#" class="magazine__href">
-                    <img src="./ico/google_play.png" alt="google play" class="googleplay" />
-                </a>
-            </div>
-            <div class="cont">
-                <p class="cont__tele"><a class="cont__tele-link" href="tel:+74951234567">+7 (495) 123-45-67</a></p>
-                <p class="cont__tele"><a class="cont__tele-link" href="email:my_mail@dot.com">my_mail@dot.com</a></p>
-            </div>
 
-            <div class="requisites">
-                <p class="requisites__text">
-                    OOO my firm <br/>
-                    ЕГРН/КПП     8934219872089 / 38912389312 <br/>
-                    Банк        Сбербанк РФ <br/>
-                    .... <br/>
-                    .... <br/>
-                </p>
-            </div>
-        </div>
-
-        
-            
-
-        <div class="map">
-            <img src="./img/map.png" alt="map" class="map__image" />
-        </div>
-
-        
-    </div>
 
 
 </main>

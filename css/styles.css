@@ -551,7 +551,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 600px) {
   .place-card {
-    width: 95%;
+    width: 97%;
     float: none;
   }
 }
