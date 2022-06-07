@@ -392,7 +392,7 @@ a.btn:active {
 }
 
 .tours-table__active {
-  background-color: #ff6666;
+  background-color: #27c019 !important;
 }
 
 .tours-table-tr:nth-child(even) {

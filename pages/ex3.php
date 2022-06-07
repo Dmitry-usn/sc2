@@ -122,9 +122,11 @@
                 <h3 class="organizer-header">Организатор</h3>
                 <div class="organizer__wrap">
                     <div class="organizer-image_wrap">
-                        <img class="organizer-image" src="./img/ex3.png" alt="" />
+                        <a href="./about#about-employes">
+                            <img class="organizer-image" src="./img/ex3.jpg" alt="" />
+                        </a>
                     </div>
-                    <p class="organizer-text">Анна</p>
+                    <p class="organizer-text">Дмитрий К.</p>
                 </div>
                 <ul class="organizer-list">
                     <li class="organizer-element">Длительность: 8 часов</li>

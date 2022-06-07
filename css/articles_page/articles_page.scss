@@ -133,12 +133,22 @@ $guideImageSize: 80px;
     width: $guideImageSize;
     height: $guideImageSize;
     margin-right: 12px;
+    margin-left: 12px;
+
 }
 
 .organizer-image {
+    box-sizing: border-box;
     width: $guideImageSize;
     height: $guideImageSize;
     border-radius: 50%;
+    border: 1px solid black;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+    }
 }
 
 .organizer-text {

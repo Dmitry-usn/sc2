@@ -122,7 +122,9 @@
                 <h3 class="organizer-header">Организатор</h3>
                 <div class="organizer__wrap">
                     <div class="organizer-image_wrap">
-                        <img class="organizer-image" src="./img/ex4.png" alt="" />
+                        <a href="./about#about-employes__last">
+                            <img class="organizer-image" src="./img/ex4.jpg" alt="" />
+                        </a>
                     </div>
                     <p class="organizer-text">Максим Ф.</p>
                 </div>

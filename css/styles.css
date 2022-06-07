@@ -1375,12 +1375,12 @@ body {
 
 @media screen and (max-width: 600px) {
   .about-card {
-    margin: 20px;
-    width: 250px;
+    margin: 10px;
   }
   .about-card__image-wrap {
     width: 250px;
     height: 300px;
+    margin: 0 auto;
   }
   .about-card__name {
     line-height: 30px;
@@ -1766,12 +1766,24 @@ body {
   width: 80px;
   height: 80px;
   margin-right: 12px;
+  margin-left: 12px;
 }
 
 .organizer-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  border: 1px solid black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.organizer-image:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .organizer-text {
@@ -2232,7 +2244,7 @@ a.btn:active {
 }
 
 .tours-table__active {
-  background-color: #ff6666;
+  background-color: #27c019 !important;
 }
 
 .tours-table-tr:nth-child(even) {

@@ -45,12 +45,12 @@
 
 @media screen and (max-width: 600px) {
   .about-card {
-    margin: 20px;
-    width: 250px;
+    margin: 10px;
   }
   .about-card__image-wrap {
     width: 250px;
     height: 300px;
+    margin: 0 auto;
   }
   .about-card__name {
     line-height: 30px;

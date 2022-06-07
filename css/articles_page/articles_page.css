@@ -133,12 +133,24 @@
   width: 80px;
   height: 80px;
   margin-right: 12px;
+  margin-left: 12px;
 }
 
 .organizer-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  border: 1px solid black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.organizer-image:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .organizer-text {
