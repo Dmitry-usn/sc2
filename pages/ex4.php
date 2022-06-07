@@ -122,7 +122,7 @@
                 <h3 class="organizer-header">Организатор</h3>
                 <div class="organizer__wrap">
                     <div class="organizer-image_wrap">
-                        <a href="./about#about-employes__last">
+                        <a href="./about#about-employes4">
                             <img class="organizer-image" src="./img/ex4.jpg" alt="" />
                         </a>
                     </div>

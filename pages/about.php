@@ -40,7 +40,7 @@
 
         </div>
     </div>
-    <div class="info">
+    <div class="about-info">
         <h2 class="info__header">Это МЫ!</h2>
         <p class="info__text">Хотите познакомиться с городом в компании его жителей? 
             Мы - гиды, которые имеют профессиональный и в то же время креативный подход к экскурсиям. 
@@ -51,7 +51,8 @@
     </div>
 
     <div class="about-cards">
-        <a href="" name="about-employes"></a>
+
+        <a href="" name="about-employes1"></a>
         <div class="about-card">
             <div class="about-card__image-wrap">
                 <img src="./img/employee1.jpg" alt="" class="about-card__image" />
@@ -61,9 +62,13 @@
                 природа и походы. Я организую пешие прогулки по городу и окрестностям, выезды в Хакасию. 
                 Наряду с заповедником «Столбы» есть немало красивых локаций, которые я вам с удовольствием покажу!
             </p>
+            <hr class="about-hr" />
+            <h4>Я Ваш Гид в:</h4>
+            <p><a class="about-card__link" href="./sayan">"Саянское созвездие Сибири"</a></p>
 
         </div>
 
+        <a href="" name="about-employes2"></a>
         <div class="about-card">
             <div class="about-card__image-wrap">
                 <img src="./img/employee2.jpg" alt="" class="about-card__image" />
@@ -75,9 +80,13 @@
                    командой подготовленных мною гидов. Наша цель — не только показать главные достопримечательности и тайные уголки 
                    нашего города, но и передать вам хорошее настроение и положительные эмоции!
             </p>
+            <hr class="about-hr" />
+            <h4>Я Ваш Гид в:</h4>
+            <p><a class="about-card__link" href="./astafev">"По Астафьевским местам"</a></p>
 
         </div>
 
+        <a href="" name="about-employes3"></a>
         <div class="about-card">
             <div class="about-card__image-wrap">
                 <img src="./img/employee3.jpg" alt="" class="about-card__image" />
@@ -92,17 +101,28 @@
                 которые так же отлично знают все окрестности, как и я. Будем очень рады показать вам самое 
                 интересное, что у нас есть! Замечательная вещь, которую я совершил в жизни: проехал от дома до Монголии на велосипеде в одиночку.
             </p>
+            <hr class="about-hr" />
+            <h4>Я Ваш Гид в:</h4>
+            <p><a class="about-card__link" href="./stolbu">"Волшебный день на Красноярских Столбах"</a></p>
 
         </div>
 
        
-        
+        <a href="" name="about-employes4"></a>
         <div class="about-card">
             <div class="about-card__image-wrap">
                 <img src="./img/employee4.jpg" alt="" class="about-card__image" />
             </div>
-            <h3 class="about-card__name">Олег Столяров</h3>
-            <p class="about-card__text">«Могу читать длинные рабочие переписки и финансовые отчёты. на 1 часть руководитель, на 1 часть предприниматель, на 2 части грек и на 3 части баскетбольный тренер. Не слишком ли много частей?».</p>
+            <h3 class="about-card__name">Максим Федоров</h3>
+            <p class="about-card__text">Привет, меня зовут Максим. Я «природный» сибиряк, родился и вырос в 
+                Красноярском крае. Являюсь аттестованным гидом-переводчиком, экскурсии провожу 20 лет. 
+                Мне нравится разбираться в деталях, причинах и следствиях того, что нас окружает. 
+                Именно этот интерес лежит в основе моей работы преподавателем в университете и экскурсоводом. 
+                До встречи в Красноярске!
+            </p>
+            <hr class="about-hr" />
+            <h4>Я Ваш Гид в:</h4>
+            <p><a class="about-card__link" href="./krasnoyarsk-night">"Красноярск под покровом ночи"</a></p>
 
         </div>
         <a href="" name="about-employes__last"></a>

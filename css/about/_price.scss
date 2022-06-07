@@ -1,6 +1,6 @@
 .price {
-    border-top: 0.5px solid black;
-    margin: 40px 0;
+    //border-top: 3.0px solid green;
+    margin: 5px 0;
 }
 
 .price__header {
@@ -26,3 +26,10 @@
 
 }
 
+@media screen and (max-width: 600px) {
+    .price__text {
+        font-size: 16px;
+        margin: 0 20px;
+        text-align: justify;
+    }
+}

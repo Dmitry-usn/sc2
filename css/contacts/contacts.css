@@ -43,6 +43,19 @@
   }
   .manager-card .manager-card__text-wrap {
     margin: 0;
+    text-align: justify;
+  }
+  .manager-card .manager-card__text-wrap .manager-card__info {
+    font-size: 16px;
+  }
+  .manager-card .manager-card__text-wrap .manager-card__tel {
+    text-align: center;
+  }
+  .manager-card .manager-card__text-wrap .manager-card__name {
+    text-align: center;
+  }
+  .manager-card .manager-card__image-wrap {
+    text-align: center;
   }
 }
 

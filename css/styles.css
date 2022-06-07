@@ -27,6 +27,7 @@
   --secondary-color3: #41394e;
   --secondary-footer: #2b2130;
   --text-secondary-color: white;
+  --text-secondary-color__green: springgreen;
 }
 
 html {
@@ -1326,6 +1327,19 @@ body {
 
 .reviewer__text-wrap .reviewer__text {
   text-align: justify;
+  line-height: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .reviewer {
+    width: 100%;
+  }
+  .reviewer__text {
+    font-size: 16px;
+  }
+  .reviewer__image-wrap {
+    text-align: center;
+  }
 }
 
 .about-cards {
@@ -1373,9 +1387,24 @@ body {
   line-height: 15px;
 }
 
+.about-hr {
+  border: solid #87af84;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.about-card__link {
+  text-decoration: none;
+  color: var(--text-main-color__green);
+}
+
 @media screen and (max-width: 600px) {
   .about-card {
     margin: 10px;
+    -webkit-box-shadow: 0px 0px 4px 0px #9fad99;
+            box-shadow: 0px 0px 4px 0px #9fad99;
+    border-radius: 1%;
+    padding: 10px;
   }
   .about-card__image-wrap {
     width: 250px;
@@ -1385,6 +1414,9 @@ body {
   .about-card__name {
     line-height: 30px;
     font-size: 18px;
+  }
+  .about-card__link {
+    font-size: 20px;
   }
 }
 
@@ -1420,6 +1452,14 @@ body {
   text-transform: uppercase;
 }
 
+.about-info {
+  text-align: center;
+}
+
+.about-info .info__text {
+  text-align: justify;
+}
+
 @media screen and (max-width: 600px) {
   .about-photo__wrap .about-photo__image {
     height: 43%;
@@ -1429,11 +1469,13 @@ body {
     font-size: 20px;
     line-height: 30px;
   }
+  .reclama__text {
+    font-size: 16px;
+  }
 }
 
 .price {
-  border-top: 0.5px solid black;
-  margin: 40px 0;
+  margin: 5px 0;
 }
 
 .price__header {
@@ -1457,6 +1499,14 @@ body {
 .price__list .price__item {
   line-height: 20px;
   color: var(--text-main-color);
+}
+
+@media screen and (max-width: 600px) {
+  .price__text {
+    font-size: 16px;
+    margin: 0 20px;
+    text-align: justify;
+  }
 }
 
 .manager-card {
@@ -1504,6 +1554,19 @@ body {
   }
   .manager-card .manager-card__text-wrap {
     margin: 0;
+    text-align: justify;
+  }
+  .manager-card .manager-card__text-wrap .manager-card__info {
+    font-size: 16px;
+  }
+  .manager-card .manager-card__text-wrap .manager-card__tel {
+    text-align: center;
+  }
+  .manager-card .manager-card__text-wrap .manager-card__name {
+    text-align: center;
+  }
+  .manager-card .manager-card__image-wrap {
+    text-align: center;
   }
 }
 

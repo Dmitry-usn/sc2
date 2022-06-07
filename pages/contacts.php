@@ -5,7 +5,7 @@
 <main class="cite-main">
     <div class="info">
         <h2 class="info__header">Контакты</h2>
-        <p class="info__text">Контакты нашей организации</p>
+        <p class="info__text"></p>
     </div>
 
     <div class="managers">

@@ -37,10 +37,24 @@
     line-height: 15px;
 }
 
+.about-hr {
+    border: solid #87af84;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.about-card__link {
+    text-decoration: none;
+    color: var(--text-main-color__green);
+}
+
 @media screen and (max-width: 600px) {
     .about-card {
         margin: 10px;
         //width: 250px;
+        box-shadow: 0px 0px 4px 0px rgb(159, 173, 153);
+        border-radius: 1%;
+        padding: 10px;
     }
     
     .about-card__image-wrap {
@@ -52,5 +66,9 @@
     .about-card__name {
         line-height: 30px;
         font-size: 18px;
+    }
+
+    .about-card__link {
+        font-size: 20px;
     }
 }

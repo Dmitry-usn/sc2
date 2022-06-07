@@ -39,6 +39,14 @@
     text-transform: uppercase;
 }
 
+.about-info {
+    text-align: center;
+
+    .info__text {
+        text-align: justify;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .about-photo__wrap {
         .about-photo__image {
@@ -50,5 +58,9 @@
     .about-photo__text { 
         font-size: 20px;
         line-height: 30px;
+    }
+
+    .reclama__text {
+        font-size: 16px;
     }
 }
