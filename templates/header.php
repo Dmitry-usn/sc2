@@ -28,9 +28,24 @@
     <!-- php-css light/dark mode -->
     <link rel="stylesheet" href="./css/<?php echo $themeStyleSheet; ?>" id="theme">
 
-    <title>my site</title>
+    <title>Krsk-Tour</title>
     <script src="./js/jquery.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=0490f1e1-8615-4a8c-828a-021f1724ca4e&lang=ru_RU" type="text/javascript"></script> 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(89128395, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/89128395" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
