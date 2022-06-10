@@ -528,6 +528,7 @@ tr:nth-child(even) {
 .place-card__text-container {
   background-color: #fff;
   padding: 2px 16px;
+  height: 50px;
 }
 
 .place-card__header {
